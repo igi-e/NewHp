@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-
+    <!--ロゴ追加できない-->
             <img src="../resources./public/img/logo.jpg" art="(有)猪木酸素玉島店">
         
         </div>
