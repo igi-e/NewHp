@@ -8,7 +8,7 @@
 <body>
     <header>
     <!--ロゴ追加できない-->
-            <img src="../resources./public/img/logo.jpg" art="(有)猪木酸素玉島店">
+            <h1><a href="index.html><img src="../resources./public/img/logo.jpg" art="(有)猪木酸素玉島店"></a></h1>
         
         </div>
     </header>
