@@ -17,4 +17,8 @@ class HpController extends Controller
     public function service(){
         return view('service/index');
     }
+
+    public function access(){
+        return view('access/index');
+    }
 }

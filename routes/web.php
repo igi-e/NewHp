@@ -18,3 +18,4 @@
 Route::get('/', 'HpController@index');
 Route::get('about', 'HpController@about')->name('about_us');
 Route::get('service', 'HpController@service')->name('service');
+Route::get('access', 'HpController@access')->name('access');

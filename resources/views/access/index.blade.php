@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>私たちについて</title>
+    <title>アクセス</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
@@ -24,7 +24,7 @@
                 <ul class="main-nav">
                     <li><a href="/">HOME</a></li>
                     <li><a href="/about/">私たちについて<br>about us</a></li>
-                    <!--<a href="/about/index.blade.php">ではない-->
+                    <!--<a href="about/index.blade.php">ではない-->
                     <li><a href="/service/">事業内容<br>service</a></li>
                     <li><a href="/contact/">お問い合わせ<br>contact</a></li>
                     <li><a href="/question/">よくある質問<br>question</a></li>
@@ -33,10 +33,9 @@
                 </ul>
             </nav>
         </header>
-        <h2>私たちについて</h2>
-        <p>当社は、昭和４年に猪木酸素店として倉敷市玉島に創業して以来、各種類の高圧ガスを、安全にかつ迅速にお客様にお届けしております。
-            また、高圧ガスや機械・工具などの販売以外にも機器の修理や電気設備の工事・メンテナンス、そして溶接・機械加工などの製作も行っており、何かとお客様のお役に立てることが出来ると思います。
-            お客様の抱える問題・課題を解決するため、その要望・要求を満たすことができる製品やサービスを提案し導入して頂くことで、顧客に喜ばれ、頼りにされる企業を目指しています。</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13144.547193098098!2d133.6807679!3d34.5500916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5eea50894f712236!2z54yq5pyo6YW457SgIOeOieWztuW6lw!5e0!3m2!1sja!2sjp!4v1598927011508!5m2!1sja!2sjp" width=100% height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
     </div>
 
     <footer>
