@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+html {
+    font-size: 80%;
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium",  "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro M3", sans-serif;
+    line-height: 1.5; /* em、%、単位なしは、フォントサイズを考慮した行高 */
+    color: #432;
+}
+
+a {
+    text-decoration: none;
+    /* すべての<a>について下線を無くす */
+}
+
+.header-logo {
+    width: 250px;
+}
+
+.logo {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.header-tel {
+    font-size: 130%;
+    /* margin: 10px 0px 10px auto; */
+    text-align: right;
+    /* padding-left: 150px; */
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;/* 全てを大文字で表示 */
+    margin-top: 28px;
+    list-style: none;
+    /* list-style-typeプロパティは、リストの先頭に表示するマーカー文字の種類を指定 */
+}
+.main-nav li{
+    margin-left: 40px;
+}
+.main-nav a {
+    color: rgb(76, 5, 168)
+}
+.main-nav a:hover {
+    color:rgb(21, 236, 243)
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    /* 両端に設置 */
+}
+
+/* .wrapper {
+    max-width: 2000px; 小さくしたら中央に寄ってしまう 
+    margin: 0 auto 50px;
+    padding: 0 4%;
+} */
+
+.fade-img {
+    position:relative;
+    width: 100%;
+    height: 500px;
+  }
+.fade-img img {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  } 
+
+.content {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.content h2 {
+    margin: 30px 0 10px;
+}
+
+.kiki img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.denkou img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.syouene img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.fukusi img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.business-photo img {
+    width: 80%;
+    height: 90%;
+}
+
+
+.business-photo {
+    display: grid;
+    gap: 40px 10px;
+    grid-template-columns:1fr 1fr;
+    margin-top: 3%;
+    margin-bottom:50px;
+
+}
+dt {
+    font-size: 20px;
+}
+dd {
+    font-size: 15px;
+    /* height: 200px; */
+}
+
+.photo-item {
+    line-height: 280px;
+    height: 280px;
+}
+
+.container {
+    min-height: 100vh; /* 画面の100％ */
+    position: relative;
+    padding-bottom: 20px;/*←footer-logoとfooterの間の高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+section {
+    width: 100;
+    height: 130px;
+    margin: 10px auto;
+    padding: 15px;
+    background: #fae7be;
+
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.vertical-scroll-table{
+	color: #5e5e5e;
+    max-height: 70px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+/* .vertical-scroll-table table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0; */
+
+/* .vertical-scroll-table table thead tr{
+	font-weight: bold;
+	text-align: center;
+	background-color: #f3f4f5;
+} */
+/* .vertical-scroll-table table tbody tr:nth-child(even){
+	background-color: #fafbfc;
+} */
+.vertical-scroll-table table td{
+	width: 33%;
+	padding: 0px;
+	/* border: 1px solid #ddd; */
+}
+
+table {
+    width: 600px;
+    height: 80px; 
+    margin: 10px auto; 
+    background-attachment: scroll;  
+}
+
+.footer-logo {
+        width: 300px;
+        margin-top: 10px;
+    }
+.footer-tel {
+    float: right;
+    margin: 20px 50px 20px 30px;
+    font-size: 15px;
+}
+
+
+footer {
+    width: 100%;
+    background: #432;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;/*←絶対位置*/
+    /* bottom: 0; 下に固定 */
+}
+footer p {
+    color: #ffffff;
+    font-size: 1rem;
+}
