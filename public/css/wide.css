@@ -9,22 +9,14 @@ body {
     color: #432;
 }
 
-/* @media screen and ( max-width:479px) {
-    body {
-        font-size: 5px;
-    }
-} 3パターンの幅に対応したcssを作ったので削除*/
-
 a {
     text-decoration: none;
     /* すべての<a>について下線を無くす */
 }
 
-/* ヘッダーの固定 */
-
 div.header {
-    display: grid;
-    gap: 50px 10px;
+    /* display: grid; */
+    gap: 1fr 1fr;
     grid-template-columns: 450px auto;
     /* margin-top: 1%; */
     /* margin-bottom: 50px; */
@@ -34,19 +26,30 @@ div.header {
     left: 0;
     /* 左から配置の基準位置を決める */
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     padding: 10px;
-    background-color: #cdcecd;
+    /* background-color: #cdcecd; */
 }
 
-div.header-right_top {
+div.header-top {
     display: grid;
-    gap: 50px 10px;
-    grid-template-columns: auto 160px;
+    /* gap: 450px auto; */
+    grid-template-columns: 450px auto;
+}
+
+.header-top_left {
+    display: grid;
+    width: 450px;
+    height: 72px;
+}
+
+.header-top_right {
+    display: grid;
 }
 
 .header-logo {
     width: 400px;
+    height: 72px;
 }
 
 .logo {
@@ -60,51 +63,50 @@ div.header-right_top {
     font-size: 16px;
     padding: 0;
     margin-top: 0;
+    width: 450px;
 }
 
+/* お電話受付時間 */
 aside {
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
 .header-tel {
-    font-size: 22px;
+    font-size: 18px;
     text-align: end;
+    padding-top: 0;
 }
 
 .header-contact .button {
-    width: 140px;
+    width: 170px;
     height: 60px;
     font-size: 1rem;
     background: turquoise;
     color: #fff;
     border-radius: 5px;
     padding: 5px 10px;
-    margin: 10px 0 auto auto;
-    text-align: end;
+    margin: 0 0 auto auto;
+    text-align: center;
 }
 
 .header-contact .button:hover {
     background: #0090aa;
 }
 
-.header-right_under {
-    text-align: end;
-}
-
-/* @media screen and ( max-width:479px )
-{
-	.logo {
-		width: 100px ;
-	}
-} 3パターンの幅に対応したcssを作ったので削除
-*/
-
-/* .header-tel {
-    font-size: 130%;
-    margin: 10px 0px 10px auto;
-    text-align: right;
-    padding-left: 150px;
+/* .header-under {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-box-pack: justify;
 } */
 
 .nav-pc {
@@ -125,29 +127,36 @@ aside {
 }
 
 .main-nav {
-    display: flex;
-    font-size: 1rem;
+    font-size: 18px;
     text-transform: uppercase;
     /* 全てを大文字で表示 */
-    margin-top: 10px;
-    margin-right: 0;
+    margin: 10px auto 30px auto;
     list-style: none;
-    /* list-style-typeプロパティは、リストの先頭に表示するマーカー文字の種類を指定 */
     width: 650px;
-    text-align: end;
-    padding: 0 10px 0 auto;
+    height: 10px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+.main-nav::after {
+    content:"";
+	display: inline-block;
+	width: 100%;
+	line-height:0;
+	height: 0;
 }
 
 .main-nav li {
-    margin-left: 20px;
+display: inline-block;
+text-align: center;
 }
 
 .main-nav a {
-    color: rgb(76, 5, 168)
+    color: rgb(108, 8, 202);
+    font-weight: bold;
 }
 
 .main-nav a:hover {
-    color: rgb(21, 236, 243)
+    color: rgb(21, 236, 243);
 }
 
 .page-header_wrapper {
@@ -211,17 +220,36 @@ dd {
 article {
     background-image: url("/img/syouene1.jpg");
     width: 100%;
-    height: 300px;
-    padding: 5%;
+    /* height: 300px; */
+    padding: 5% 5% 2% 5%;
     margin-top: 60px;
 }
 
+.syouene_btn {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.syouene_btn {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: -ms-box;
+    box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-box-pack: justify; 
+}
+
 .btn-social-square {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     width: 90px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 10px;
     height: 90px;
     line-height: 45px;
     font-size: 16px;
@@ -268,54 +296,6 @@ article {
     /*←footer-logoとfooterの間の高さ*/
     box-sizing: border-box;
     /*←全て含めてmin-height:100vhに*/
-}
-
-section {
-    width: 1000px;
-    height: 170px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fae7be;
-    border-radius: 10px;
-}
-
-section h2 {
-    text-align: center;
-}
-
-.vertical-scroll-table {
-    color: #5e5e5e;
-    max-height: 100px;
-    overflow: auto;
-    overflow-x: hidden;
-}
-
-/* .vertical-scroll-table table{
-	width: 100%;
-	border-collapse: collapse;
-	border-spacing: 0; */
-
-/* .vertical-scroll-table table thead tr{
-	font-weight: bold;
-	text-align: center;
-	background-color: #f3f4f5;
-} */
-
-/* .vertical-scroll-table table tbody tr:nth-child(even){
-	background-color: #fafbfc;
-} */
-
-.vertical-scroll-table table td {
-    width: 33%;
-    padding: 0px;
-    /* border: 1px solid #ddd; */
-}
-
-table {
-    width: 800px;
-    height: 80px;
-    margin: 10px auto;
-    background-attachment: scroll;
 }
 
 .about h2 {
@@ -377,18 +357,6 @@ picture li {
 picture img {
     width: 450px;
     height: 300px;
-}
-
-.map_honsya {
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.map_okayama {
-    margin-top: 30px;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .fukusi_hinmoku img {
@@ -453,16 +421,88 @@ a.btn {
     margin-bottom: 30px;
 }
 
+section {
+    /* width: 1000px; */
+    height: 170px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fae7be;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.vertical-scroll-table {
+    color: #5e5e5e;
+    max-height: 100px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* .vertical-scroll-table table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0; */
+
+/* .vertical-scroll-table table thead tr{
+	font-weight: bold;
+	text-align: center;
+	background-color: #f3f4f5;
+} */
+
+/* .vertical-scroll-table table tbody tr:nth-child(even){
+	background-color: #fafbfc;
+} */
+
+.vertical-scroll-table table td {
+    width: 33%;
+    padding: 0px;
+    /* border: 1px solid #ddd; */
+}
+.vertical-scroll-table .news-day {
+    float: none;
+    /* border: 1px solid #ddd; */
+}
+
+table {
+    /* width: 800px; */
+    height: 80px;
+    margin: 10px auto;
+    background-attachment: scroll;
+}
+
+.map_honsya {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.map_okayama {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* 
+.page-footer {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
 .footer-logo {
-    width: 500px;
+    width: 300px;
     margin-top: 15px;
 }
 
 .footer-tel {
     float: right;
     margin: 30px 50px 20px 30px;
-    font-size: 20px;
-}
+    font-size: 18px;
+    text-align: end;
+} */
 
 footer {
     width: 100%;

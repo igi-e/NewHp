@@ -36,92 +36,86 @@
 <body>
     <?php $tel = "086-526-1212"; ?>
 
-    <div class="container">
-        <header class="page-header wrapper">
-            <div class="header-logo">
-                <a href="index.blade.php">
-                    <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-                <!-- <p class="tel">tel: <?php echo $tel ?></p> -->
-                <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p>
-                <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
-            </div>
+    <header class="page-header wrapper">
+        <div class="header-logo">
+            <a href="index.blade.php">
+                <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+            <!-- <p class="tel">tel: <?php echo $tel ?></p> -->
+            <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p>
+            <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
+        </div>
 
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="/">トップページ<br>HOME</a></li>
-                    <li><a href="about/">私たちについて<br>about us</a></li>
-                    <!--<a href="about/index.blade.php">ではない-->
-                    <li><a href="service/">事業内容<br>service</a></li>
-                    <li><a href="question/">ブログ<br>blog</a></li>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="/">トップページ<br>HOME</a></li>
+                <li><a href="about/">私たちについて<br>about us</a></li>
+                <!--<a href="about/index.blade.php">ではない-->
+                <li><a href="service/">事業内容<br>service</a></li>
+                <li><a href="question/">ブログ<br>blog</a></li>
 
 
+            </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="inner">
+
+            <p class="navBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <nav role='navigation'>
+                <ul>
+                    <li><a href="/">トップページ [HOME]</a></li>
+                    <li><a href="/about">私たちについて [ABOUT US]</a></li>
+                    <li><a href="/service">事業内容 [SERVICE]</a></li>
+                    <li><a href="/blog">ブログ [BLOG]</a></li>
                 </ul>
             </nav>
+            <!-- /.inner -->
+        </div>
+    </header>
+    <!-- </div> -->
 
-            <!-- ハンバーガーメニュー -->
-            <div class="inner">
-
-                <p class="navBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </p>
-                <nav role='navigation'>
-                    <ul>
-                        <li><a href="/">トップページ [HOME]</a></li>
-                        <li><a href="/about">私たちについて [ABOUT US]</a></li>
-                        <li><a href="/service">事業内容 [SERVICE]</a></li>
-                        <li><a href="/blog">ブログ [BLOG]</a></li>
-                    </ul>
-                </nav>
-                <!-- /.inner -->
-            </div>
-        </header>
-        <!-- </div> -->
-
-        <div class="group_info">
+    <div class="container">
+        <div class="group-info">
             <h2>福祉部門（介護福祉用具貸与・販売・住宅改修）「あいの助」</h2>
-
-            <p>弊社は「幸せ」をキーワードに、日々活動しています。
-                利用者様やその家族、そして地域の方々が弊社の活動を通じて「幸せ」を感じて頂くことで、私たちも「幸せ」になれると考えています。
-                経験豊富な「あいの助」スタッフが温かく支援致します！
-
+            <p>弊社は「幸せ」をキーワードに、日々活動しています。利用者様やその家族、そして地域の方々が弊社の活動を通じて「幸せ」を感じて頂くことで、私たちも「幸せ」になれると考えています。経験豊富な「あいの助」スタッフが温かく支援致します！
             </p>
 
-            <div class="fukusi_hinmoku">
-                <h2>取扱品目の一例</h2>
+            <h2>取扱品目の一例</h2>
 
-                <h3>▼福祉用具レンタル▼</h3>
-                <table class="fukusi_hinmoku>
+            <h3>▼福祉用具レンタル▼</h3>
+            <table class="fukusi_hinmoku">
                 <tr>
                     <td><img src=" \img\bed.jpg">
                     </td>
                     <td><img src="\img\kurumaisu-1.jpg"></td>
                     <td><img src="\img\hokouki.jpg"></td>
                     <td><img src="\img\tesuri.jpg"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="\img\hojobenza.jpg"></td>
-                        <td><img src="\img\yokusou.jpg"></td>
-                        <td><img src="\img\omutu.jpg"></td>
-                        <td><img src="\img\maekake.jpg"></td>
-                    </tr>
-                </table>
-            </div>
+                </tr>
+                <tr>
+                    <td><img src="\img\hojobenza.jpg"></td>
+                    <td><img src="\img\yokusou.jpg"></td>
+                    <td><img src="\img\omutu.jpg"></td>
+                    <td><img src="\img\maekake.jpg"></td>
+                </tr>
+            </table>
+
             <p>福祉用具のレンタル費用の負担額を軽減してくれるサービスです(自己負担1割)
                 買うにはちょっと高すぎて手がでない、介護状態の変化に応じて毎回買うのは大変、買う前にちょっと使ってみたいといった時にご利用ください。
                 どの介護状態の方が、どの福祉用具がレンタルできるかといった、詳しい情報については下記の【詳しくはこちらへ】をクリック頂き、取り扱い介護用品紹介をご覧ください。
             </p>
+
             <h3>▼福祉用具販売▼</h3>
             <p>特定福祉用具販売は介護保険を利用して該当する商品を年間１０万円まで１割購入する事ができます。５種類の特定福祉用具が販売の対象となります。<br>その他介護用品の販売：靴、杖、食器、エプロン、大人用紙オムツなど、様々な介護用品を取り扱いしております。</p>
 
             <div class="btn">
-                <button type=“btn” onclick="location.href='http://hp.kaipoke.biz/3cu/index.html'">詳しくはこちらへ</button>
+            <button type=“btn” onclick="location.href='http://hp.kaipoke.biz/3cu/index.html'">詳しくはこちらへ</button>
             </div>
+
         </div>
-
-
-
 
         <div class="content">
 

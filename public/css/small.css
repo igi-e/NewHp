@@ -318,6 +318,10 @@ table {
     background-attachment: scroll;
 }
 
+.news-day {
+    display: block;
+}
+
 .about h2 {
     margin-top: 30px;
     margin-bottom: 10px;

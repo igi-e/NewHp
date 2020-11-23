@@ -12,12 +12,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"><!-- google fontsを使う -->
 
-    <link rel="stylesheet" href="css/small.css" media="screen and (max-width:811px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
+    <link rel="stylesheet" href="css/small.css" media="screen and (max-width:480px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
 
     <!-- <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:480px) and (max-width:1024px)"> 
     画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
 
-    <link rel="stylesheet" href="css/wide.css" media="screen and (min-width:812px)"><!-- 画面サイズ1024px以上はこのファイルはスタイルが適用される。 -->
+    <link rel="stylesheet" href="css/wide.css" media="screen and (min-width:481px)"><!-- 画面サイズ1024px以上はこのファイルはスタイルが適用される。 -->
 
     <link href="css/style.css" rel="stylesheet"> <!-- レスポンシブにするため上の3行にした -->
 
@@ -47,49 +47,45 @@
 
 
     <div class="header">
-        <div class="header-right">
-            <div class="header-logo">
-                <a href="index.blade.php">
-                    <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+        <div class="header-top">
+            <div class="header-top_left">
+                <div class="header-logo">
+                    <a href="index.blade.php">
+                        <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                </div>
+                <div class="address">
+                    <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                </div>
             </div>
 
-            <div class="address">
-                <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
-            </div>
-        </div>
-
-        <div class="header-right">
-            <div class="header-right_top">
+            <div class="header-top_right">
+                <div class="header-contact">
+                    <p class="button"><a href="mailform/">✉　お問い合わせ・<br>資料請求はこちら</a></p>
+                </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
                     <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
                 </div>
 
-                <!-- <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p> -->
-                <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
-
-                <div class="header-contact">
-                    <p><a class="button" href="mailform/">✉　お問い合わせ・<br>資料請求はこちら</a></p>
-                </div>
-            </div>
-
-            <div class="header-right_under">
-                <nav class="nav-pc">
-                    <ul class="main-nav">
-                        <li><a href="/">トップページ<br>home</a></li>
-                        <li><a href="about/">私たちについて<br>about us</a></li>
-                        <!--<a href="about/index.blade.php">ではない-->
-                        <li><a href="service/">事業内容<br>service</a></li>
-                        <li><a href="http://igisanso.com/diary/">ブログ<br>blog</a></li>
-                        <!-- <li><a href="map/">アクセス<br>access</a></li> -->
-                        <li><a href="#map" class="isActive">アクセス<br>access</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
 
+        <div class="header-under">
+            <!-- <nav class="nav-pc"> -->
+            <ul class="main-nav">
+                <li><a href="/">トップページ</a></li>
+                <li><a href="about/">私たちについて</a></li>
+                <!--<a href="about/index.blade.php">ではない-->
+                <li><a href="service/">事業内容</a></li>
+                <li><a href="http://igisanso.com/diary/">ブログ</a></li>
+                <!-- <li><a href="map/">アクセス<br>access</a></li> -->
+                <li><a href="#map" class="isActive">アクセス</a></li>
+            </ul>
+            <!-- </nav> -->
+        </div>
+
         <!-- ハンバーガーメニュー -->
-        <div class="inner nav-sp">
+        <!-- <div class="inner nav-sp">
 
             <p class="navBtn">
                 <span></span>
@@ -105,8 +101,7 @@
                     <li><a href="map/">アクセス [ACCESS]</a></li>
                 </ul>
             </nav>
-            <!-- /.inner -->
-        </div>
+        </div> -->
     </div>
 
 
@@ -179,8 +174,8 @@
                         @foreach ($rss->channel->item as $item)
                         <tr>
                             <td>{{$item->title}}</td>
-                            <td><a href="{{$item->link}}">（詳細）</td>
-                            <td>{{date("Y年 n月 j日", strtotime($item->pubDate))}}</td>
+                            <td><a href="{{$item->link}}">（詳細）
+                                    <span class="news-day">{{date("Y年 n月 j日", strtotime($item->pubDate))}}</span></td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -189,7 +184,8 @@
         </section>
 
         <a name="map">
-            <div class="map_honsya" <p>本社（機器・溶材部門、電気工事部門）</p>
+            <div class="map_honsya">
+                <p>本社（機器・溶材部門、電気工事部門）</p>
                 <map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.132770844238!2d133.67856701522834!3d34.550193580473355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515bac07ea4ba5%3A0xe5c8961188ef1b8a!2z44CSNzEzLTgxMDIg5bKh5bGx55yM5YCJ5pW35biC546J5bO277yR77yV77yZ77yZ4oiS77yV!5e0!3m2!1sja!2sjp!4v1598927013716!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></map>
             </div>
 
@@ -199,12 +195,35 @@
             </div>
         </a>
 
-        <div class="page-footer wrapper">
+        <!-- <div class="page-footer">
             <a href="index.blade.php">
                 <img class="footer-logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
             <div class="footer-tel">
                 <p>お気軽にご連絡ください。社員一同お待ちしております。</p>
                 <a href="tel:<?php echo $tel ?>" class="tel">tel: <?php echo $tel ?></a>
+            </div>
+        </div> -->
+
+        <div class="header-top">
+            <div class="header-top_left">
+                <div class="header-logo">
+                    <a href="index.blade.php">
+                        <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                </div>
+                <div class="address">
+                    <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                </div>
+            </div>
+
+            <div class="header-top_right">
+                <div class="header-contact">
+                    <p class="button"><a href="mailform/">✉　お問い合わせ・<br>資料請求はこちら</a></p>
+                </div>
+                <div class="header-tel">
+                    <aside>お電話受付時間　平日9:00～17:00</aside>
+                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                </div>
+
             </div>
         </div>
 
