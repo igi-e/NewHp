@@ -63,6 +63,7 @@ a {
 .header-navbtn:hover, .header-navbtn:active {
     background-color: #8bb15a;
 }
+
 @media screen and (min-width: 768px) {
     .header-navbtn {
         display: none;
@@ -103,17 +104,17 @@ a {
 }
 
 .kiki img {
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
 .denkou img {
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 
 .syouene img {
-    height: 300px;
+    height: 100%;
     object-fit: cover;
 }
 

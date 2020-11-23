@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- レスポンシブの設定 -->
     <title>(有)猪木酸素玉島店</title>
-    <link rel="stylesheet" href="css/humbager.css" media="screen and (max-width:640px)">
+
+    <link rel="stylesheet" href="css/humbager.css" media="screen and (max-width:811px)">
 
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットcss：ブラウザの違いによる表示の違いをなくする -->
+
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"><!-- google fontsを使う -->
-    <link rel="stylesheet" href="css/small.css" media="screen and (max-width:480px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
-    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:480px) and (max-width:1024px)"> <!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
+
+    <link rel="stylesheet" href="css/small.css" media="screen and (max-width:811px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
+
+    <!-- <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:480px) and (max-width:1024px)"> 
+    画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
+
     <link rel="stylesheet" href="css/wide.css" media="screen and (min-width:812px)"><!-- 画面サイズ1024px以上はこのファイルはスタイルが適用される。 -->
+
     <link href="css/style.css" rel="stylesheet"> <!-- レスポンシブにするため上の3行にした -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <!--スライダー-->
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -67,7 +76,7 @@
             <div class="header-right_under">
                 <nav class="nav-pc">
                     <ul class="main-nav">
-                        <li><a href="/">トップページ<br>HOME</a></li>
+                        <li><a href="/">トップページ<br>home</a></li>
                         <li><a href="about/">私たちについて<br>about us</a></li>
                         <!--<a href="about/index.blade.php">ではない-->
                         <li><a href="service/">事業内容<br>service</a></li>
@@ -78,28 +87,28 @@
                 </nav>
             </div>
         </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="inner nav-sp">
+
+            <p class="navBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <nav role='navigation'>
+                <ul>
+                    <li><a href="/">トップページ [HOME]</a></li>
+                    <li><a href="about/">私たちについて [ABOUT US]</a></li>
+                    <li><a href="service/">事業内容 [SERVICE]</a></li>
+                    <li><a href="blog/">ブログ [BLOG]</a></li>
+                    <li><a href="map/">アクセス [ACCESS]</a></li>
+                </ul>
+            </nav>
+            <!-- /.inner -->
+        </div>
     </div>
 
-    <!-- ハンバーガーメニュー -->
-    <div class="inner nav-sp">
-
-        <p class="navBtn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </p>
-        <nav role='navigation'>
-            <ul>
-                <li><a href="/">トップページ [HOME]</a></li>
-                <li><a href="about/">私たちについて [ABOUT US]</a></li>
-                <li><a href="service/">事業内容 [SERVICE]</a></li>
-                <li><a href="blog/">ブログ [BLOG]</a></li>
-                <li><a href="map/">アクセス [ACCESS]</a></li>
-            </ul>
-        </nav>
-        <!-- /.inner -->
-    </div>
-    </div>
 
     <div class="container">
         <div class="fade-img">

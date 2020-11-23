@@ -36,49 +36,50 @@
 <body>
     <?php $tel = "086-526-1212"; ?>
 
-    <div class="container">
-        <header class="page-header wrapper">
-            <div class="header-logo">
-                <a href="index.blade.php">
-                    <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-                <!-- <p class="tel">tel: <?php echo $tel ?></p> -->
-                <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p>
-                <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
-            </div>
 
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="/">トップページ<br>HOME</a></li>
-                    <li><a href="about/">私たちについて<br>about us</a></li>
-                    <!--<a href="about/index.blade.php">ではない-->
-                    <li><a href="service/">事業内容<br>service</a></li>
-                    <li><a href="question/">ブログ<br>blog</a></li>
+    <header class="page-header wrapper">
+        <div class="header-logo">
+            <a href="index.blade.php">
+                <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+            <!-- <p class="tel">tel: <?php echo $tel ?></p> -->
+            <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p>
+            <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
+        </div>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="/">トップページ<br>HOME</a></li>
+                <li><a href="about/">私たちについて<br>about us</a></li>
+                <!--<a href="about/index.blade.php">ではない-->
+                <li><a href="service/">事業内容<br>service</a></li>
+                <li><a href="question/">ブログ<br>blog</a></li>
 
 
+            </ul>
+        </nav>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="inner">
+
+            <p class="navBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </p>
+            <nav role='navigation'>
+                <ul>
+                    <li><a href="/">トップページ [HOME]</a></li>
+                    <li><a href="/about">私たちについて [ABOUT US]</a></li>
+                    <li><a href="/service">事業内容 [SERVICE]</a></li>
+                    <li><a href="/blog">ブログ [BLOG]</a></li>
                 </ul>
             </nav>
+            <!-- /.inner -->
+        </div>
+    </header>
+    <!-- </div> -->
 
-            <!-- ハンバーガーメニュー -->
-            <div class="inner">
-
-                <p class="navBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </p>
-                <nav role='navigation'>
-                    <ul>
-                        <li><a href="/">トップページ [HOME]</a></li>
-                        <li><a href="/about">私たちについて [ABOUT US]</a></li>
-                        <li><a href="/service">事業内容 [SERVICE]</a></li>
-                        <li><a href="/blog">ブログ [BLOG]</a></li>
-                    </ul>
-                </nav>
-                <!-- /.inner -->
-            </div>
-        </header>
-        <!-- </div> -->
-
+    <div class="container">
         <div class="group-info">
             <h2>高圧ガスや溶接材料、機械、工具などの販売「機器・溶材部門」</h2>
             <p>当社の主力商品である高圧ガスは、自動車、造船、建設業などに金属の溶接・切断用、医療現場における吸入酸素や麻酔用、食品産業において酸化防止用、農作物の成長促進用など多種多様な用途に用いられており、それぞれの分野へ供給しています。高圧ガス、溶接機・溶接材料、機械工具から様々な商品を販売しています。<br>こうした活動において、お客様よりお困りごとをよく耳にすることがあります。それは、生産過程における機器の故障です。その中でも天井クレーンや溶接機に関することが多く、当社ではそれらの修理に取り組むことにしました。それ以来、お客様から急な故障にも対応出来、喜んで頂いています。<br>また、溶接・機械加工などの製作を行っています。お客様の希望に出来るだけ沿った加工品を、弊社の協力会社の中から最適な業者を選定し、発注から納品までを管理致します。
