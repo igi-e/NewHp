@@ -30,18 +30,9 @@ div.header {
     width: 100%;
     /* height: 150px; */
     padding: 5px;
-    background-color: #cdcecd;
+
 }
 
-/* div.header-right_top {
-    display: grid;
-    gap: 50px 10px;
-    grid-template-columns: auto 160px;
-} */
-
-/* .header-logo {
-    width: 100%;
-} */
 
 .logo {
     width: 100%;
@@ -50,8 +41,9 @@ div.header {
 }
 
 .address {
+    display: inline;
     text-align: end;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
     margin-top: 0;
 }
@@ -68,39 +60,34 @@ aside {
 }
 
 .header-contact .button {
-    width: 120px;
+    /* width: 120px;
     height: 50px;
-    font-size: 0.8rem;
-    background: turquoise;
+    font-size: 0.8rem; */
+    /* background: turquoise;
     color: #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 5px; */
+    /* padding: 5px 10px;
     margin: 10px 0 auto auto;
-    text-align: end;
+    text-align: end; */
+}
+
+img.otoiawase {
+    width: 120px;
+    height: auto;
+    /* margin-right: 30px 40px 10px auto; */
+    float: right;
 }
 
 .header-contact .button:hover {
-    background: #0090aa;
+    background: #50697e2c;
 }
 
-.header-right_under {
-    text-align: end;
+.header-under {
+    width: 100%;
+    height: 22px;
+    background-color: #111111;
 }
 
-/* @media screen and ( max-width:479px )
-{
-	.logo {
-		width: 100px ;
-	}
-} 3パターンの幅に対応したcssを作ったので削除
-*/
-
-/* .header-tel {
-    font-size: 130%;
-    margin: 10px 0px 10px auto;
-    text-align: right;
-    padding-left: 150px;
-} */
 
 .nav-pc {
     display: block;
@@ -110,48 +97,51 @@ aside {
     display: none;
 }
 
-/* @media screen and (max-width:640px) {
+ /* @media screen and (max-width:480px) {
     .nav-pc {
         display: none;
     }
     .nav-sp {
         display: block;
     }
-} */
+}  */
 
 .main-nav {
-    display: flex;
-    font-size: 0.7rem;
+    /* display: flex; */
+    font-size: 0.8rem;
     text-transform: uppercase;
     /* 全てを大文字で表示 */
-    margin-top: 10px;
-    margin-right: 0;
+    margin: 10px auto 30px auto;
+    /* margin-right: 0; */
     list-style: none;
-    /* list-style-typeプロパティは、リストの先頭に表示するマーカー文字の種類を指定 */
     width: 100%;
+    height: 10px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    
     /* text-align: end;*/
-    padding: 0 5px 0 auto;
+    /* padding: 0 5px 0 auto; */
+}
+.main-nav::after {
+    content:"";
+	display: inline-block;
+	width: 100%;
+	line-height:0;
+	height: 0;
 }
 
 .main-nav li {
-    margin-left: 3%;
+    display: inline-block;
+    text-align: center;
 }
 
 .main-nav a {
-    color: rgb(76, 5, 168)
+    color: #fff;
+    font-weight: bold;
 }
 
 .main-nav a:hover {
     color: rgb(21, 236, 243)
-}
-
-.page-header_wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: auto;
-    /* 小さくしたら中央に寄ってしまう */
-    margin: 0 auto 10px;
-    padding: 0 2%;
 }
 
 .fade-img {
@@ -174,7 +164,7 @@ aside {
 }
 
 .content h2 {
-    margin: 50px 0 20px;
+    margin: 50px 0 0 0;
     font-size: 24px;
 }
 
@@ -192,7 +182,7 @@ aside {
 }
 
 .photo-item {
-    padding: 0 15px;
+    padding: 20px 15px 0 15px;
 }
 
 dt {
@@ -206,25 +196,28 @@ dd {
 article {
     background-image: url("/img/syouene1.jpg");
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     padding: 5%;
-    margin: 60px 0px 5px 0px;
+    margin: 00px 0px 5px 0px;
 }
 
 .syouene_btn {
-    text-align: center;
+    display: grid;
+    gap: 10px auto;
+    grid-template-columns: 1fr 1fr;
+    /* text-align: center; */
     padding: 0;
-    margin: 0;
+    margin-left: 20px;
 }
 .btn-social-square {
-    display: inline-block;
+    /* display: block; */
     text-decoration: none;
-    width: 70px;
+    width: 90px;
     margin-top: 10px;
     margin-left: 10px;
-    height: 70px;
+    height: 90px;
     line-height: 45px;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     border-radius: 12px;
     text-align: center;

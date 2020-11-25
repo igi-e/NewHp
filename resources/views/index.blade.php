@@ -7,7 +7,7 @@
     <title>(有)猪木酸素玉島店</title>
 
     <link rel="stylesheet" href="css/humbager.css" media="screen and (max-width:811px)">
-
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットcss：ブラウザの違いによる表示の違いをなくする -->
 
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"><!-- google fontsを使う -->
@@ -17,7 +17,7 @@
     <!-- <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:480px) and (max-width:1024px)"> 
     画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
 
-    <link rel="stylesheet" href="css/wide.css" media="screen and (min-width:481px)"><!-- 画面サイズ1024px以上はこのファイルはスタイルが適用される。 -->
+    <link rel="stylesheet" href="css/wide.css" media="screen and (min-width:481px)"><!-- 画面サイズ481px以上はこのファイルはスタイルが適用される。 -->
 
     <link href="css/style.css" rel="stylesheet"> <!-- レスポンシブにするため上の3行にした -->
 
@@ -45,12 +45,11 @@
 <body>
     <?php $tel = "086-526-1212"; ?>
 
-
     <div class="header">
         <div class="header-top">
             <div class="header-top_left">
                 <div class="header-logo">
-                    <a href="index.blade.php">
+                    <a href="/">
                         <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
                 </div>
                 <div class="address">
@@ -60,28 +59,23 @@
 
             <div class="header-top_right">
                 <div class="header-contact">
-                    <p class="button"><a href="mailform/">✉　お問い合わせ・<br>資料請求はこちら</a></p>
+                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
                     <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
                 </div>
-
             </div>
         </div>
 
         <div class="header-under">
-            <!-- <nav class="nav-pc"> -->
             <ul class="main-nav">
                 <li><a href="/">トップページ</a></li>
                 <li><a href="about/">私たちについて</a></li>
-                <!--<a href="about/index.blade.php">ではない-->
                 <li><a href="service/">事業内容</a></li>
                 <li><a href="http://igisanso.com/diary/">ブログ</a></li>
-                <!-- <li><a href="map/">アクセス<br>access</a></li> -->
                 <li><a href="#map" class="isActive">アクセス</a></li>
             </ul>
-            <!-- </nav> -->
         </div>
 
         <!-- ハンバーガーメニュー -->
@@ -128,7 +122,7 @@
                 </dl>
                 <dl class="denkou">
                     <a href="denkou/">
-                        <dd class="photo-item"><img src="img/denkou.jpg"></dd>
+                        <dd class="photo-item"><img src="img/denkou2.png"></dd>
                         <dt>電気工事部門</dt>
                         <dd>家庭用電気設備から工場・病院の高圧電気施設まで多岐にわたる工事・点検・保守・メンテナンスをご提供しております。
                         </dd>
@@ -136,7 +130,7 @@
                 </dl>
                 <dl class="fukusi">
                     <a href="fukusi/">
-                        <dd class="photo-item"><img src="img/kurumaisu.jpg"></dd>
+                        <dd class="photo-item"><img src="img/kurumaisu2.jpg"></dd>
                         <dt>福祉用具の貸与・販売</dt>
                         <dd>介護福祉用具貸与・販売 介護用品のことなら「ライフサポート　あいの助」にお任せください！ 利用者様の立場に立ったご提案を心掛けています。
                         </dd>
@@ -173,9 +167,8 @@
                     <tbody>
                         @foreach ($rss->channel->item as $item)
                         <tr>
-                            <td>{{$item->title}}</td>
-                            <td><a href="{{$item->link}}">（詳細）
-                                    <span class="news-day">{{date("Y年 n月 j日", strtotime($item->pubDate))}}</span></td>
+                            <td class="news-day">{{date("Y/n/j", strtotime($item->pubDate))}}</td>
+                            <td>{{$item->title}}<span class="detail"><a href="{{$item->link}}">（詳細）</span></td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -204,6 +197,7 @@
             </div>
         </div> -->
 
+        <div class="page-footer">
         <div class="header-top">
             <div class="header-top_left">
                 <div class="header-logo">
@@ -217,7 +211,7 @@
 
             <div class="header-top_right">
                 <div class="header-contact">
-                    <p class="button"><a href="mailform/">✉　お問い合わせ・<br>資料請求はこちら</a></p>
+                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
@@ -225,6 +219,7 @@
                 </div>
 
             </div>
+        </div>
         </div>
 
     </div>

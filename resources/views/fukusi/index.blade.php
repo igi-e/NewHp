@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- レスポンシブの設定 -->
     <title>(有)猪木酸素玉島店</title>
-    <link rel="stylesheet" href="../css/humbager.css">
 
+    <link rel="stylesheet" href="/css/humbager.css" media="screen and (max-width:811px)">
+    <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"><!-- リセットcss：ブラウザの違いによる表示の違いをなくする -->
+
     <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet"><!-- google fontsを使う -->
-    <link rel="stylesheet" href="../css/small.css" media="screen and (max-width:480px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
-    <link rel="stylesheet" href="../css/medium.css" media="screen and (min-width:480px) and (max-width:1024px)"> <!-- 画面サイズ480pxから1024pxまではこのファイルのスタイルが適用される。 -->
-    <link rel="stylesheet" href="../css/wide.css" media="screen and (min-width:1024px)"><!-- 画面サイズ1024px以上はこのファイルはスタイルが適用される。 -->
-    <link href="../css/style.css" rel="stylesheet"> <!-- レスポンシブにするため上の3行にした -->
+
+    <link rel="stylesheet" href="/css/small.css" media="screen and (max-width:480px)"><!--　画面サイズが480pxまでこのファイルのスタイルが適用される。 -->
+
+    <link rel="stylesheet" href="/css/wide.css" media="screen and (min-width:481px)"><!-- 画面サイズ481px以上はこのファイルはスタイルが適用される。 -->
+
+    <link href="/css/style.css" rel="stylesheet"> <!-- レスポンシブにするため上の3行にした -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <!--スライダー-->
+
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -36,47 +42,39 @@
 <body>
     <?php $tel = "086-526-1212"; ?>
 
-    <header class="page-header wrapper">
-        <div class="header-logo">
-            <a href="index.blade.php">
-                <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-            <!-- <p class="tel">tel: <?php echo $tel ?></p> -->
-            <p class="header-tel"><a href="tel:<?php echo $tel ?>">tel: <?php echo $tel ?></a></p>
-            <!-- aタグはインラインのためcssのtext-alignで右に寄せれないためpタグを追加 -->
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top_left">
+                <div class="header-logo">
+                    <a href="/">
+                        <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                </div>
+                <div class="address">
+                    <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                </div>
+            </div>
+
+            <div class="header-top_right">
+                <div class="header-contact">
+                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                </div>
+                <div class="header-tel">
+                    <aside>お電話受付時間　平日9:00～17:00</aside>
+                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                </div>
+            </div>
         </div>
 
-        <nav>
+        <div class="header-under">
             <ul class="main-nav">
-                <li><a href="/">トップページ<br>HOME</a></li>
-                <li><a href="about/">私たちについて<br>about us</a></li>
-                <!--<a href="about/index.blade.php">ではない-->
-                <li><a href="service/">事業内容<br>service</a></li>
-                <li><a href="question/">ブログ<br>blog</a></li>
-
-
+                <li><a href="/">トップページ</a></li>
+                <li><a href="/about/">私たちについて</a></li>
+                <li><a href="/service/">事業内容</a></li>
+                <li><a href="http://igisanso.com/diary/">ブログ</a></li>
+                <li><a href="/#map" class="isActive">アクセス</a></li>
             </ul>
-        </nav>
-
-        <!-- ハンバーガーメニュー -->
-        <div class="inner">
-
-            <p class="navBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </p>
-            <nav role='navigation'>
-                <ul>
-                    <li><a href="/">トップページ [HOME]</a></li>
-                    <li><a href="/about">私たちについて [ABOUT US]</a></li>
-                    <li><a href="/service">事業内容 [SERVICE]</a></li>
-                    <li><a href="/blog">ブログ [BLOG]</a></li>
-                </ul>
-            </nav>
-            <!-- /.inner -->
         </div>
-    </header>
-    <!-- </div> -->
+    </div>
 
     <div class="container">
         <div class="group-info">
@@ -87,9 +85,9 @@
             <h2>取扱品目の一例</h2>
 
             <h3>▼福祉用具レンタル▼</h3>
-            <table class="fukusi_hinmoku">
+            <table class="kiki_hinmoku-joudan">
                 <tr>
-                    <td><img src=" \img\bed.jpg">
+                    <td><img src="\img\bed.jpg">
                     </td>
                     <td><img src="\img\kurumaisu-1.jpg"></td>
                     <td><img src="\img\hokouki.jpg"></td>
@@ -112,7 +110,7 @@
             <p>特定福祉用具販売は介護保険を利用して該当する商品を年間１０万円まで１割購入する事ができます。５種類の特定福祉用具が販売の対象となります。<br>その他介護用品の販売：靴、杖、食器、エプロン、大人用紙オムツなど、様々な介護用品を取り扱いしております。</p>
 
             <div class="btn">
-            <button type=“btn” onclick="location.href='http://hp.kaipoke.biz/3cu/index.html'">詳しくはこちらへ</button>
+                <button type=“btn” onclick="location.href='http://hp.kaipoke.biz/3cu/index.html'">詳しくはこちらへ</button>
             </div>
 
         </div>
@@ -156,16 +154,16 @@
             </div>
 
             <div class="syouene_btn">
-                <a class="btn-social-square btn-social-square--hatebu">
+                <a class="btn-social-square btn-social-square--hatebu" href="/syouene/">
                     猪木酸素の<br>省エネ
                 </a>
-                <a class="btn-social-square btn-social-square--hatebu">
+                <a class="btn-social-square btn-social-square--hatebu" href="/shindan/">
                     無料<br>省エネ診断
                 </a>
-                <a class="btn-social-square btn-social-square--hatebu">
+                <a class="btn-social-square btn-social-square--hatebu" href="/hojokin/">
                     補助金申請<br>サポート
                 </a>
-                <a class="btn-social-square btn-social-square--hatebu">よくある<br>質問
+                <a class="btn-social-square btn-social-square--hatebu" href="/question/">よくある<br>質問
                 </a>
             </div>
         </article>
