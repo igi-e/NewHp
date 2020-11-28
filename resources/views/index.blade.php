@@ -59,11 +59,11 @@
 
             <div class="header-top_right">
                 <div class="header-contact">
-                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                    <p class="button"><a href="/contact/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
-                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                    <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
                 </div>
             </div>
         </div>
@@ -99,129 +99,133 @@
     </div>
 
 
-    <div class="container">
-        <div class="fade-img">
-            <img src="img\yousetu.jpg" alt="">
-            <img src="img\iryou.jpg" alt="">
-            <img src="img\hyousatu_repair.jpg" alt="">
-            <img src="img\gaikan_naname.jpg" alt="">
+    <!-- <div class="container"> -->
+    <div class="fade-img">
+        <img src="img\yousetu.jpg" alt="">
+        <img src="img\iryousasae.jpg" alt="">
+        <img src="img\tiikisasae.jpg" alt="">
+        <img src="img\yorokobareru.jpg" alt="">
+        <!-- <img src="img\iryou.jpg" alt=""> -->
+        <!-- <img src="img\iryou_2.jpg" alt=""> -->
+        <!-- <img src="img\gaikan_naname.jpg" alt=""> -->
+    </div>
+
+    <div class="content">
+
+        <h2>事業内容【SERVICE】</h2>
+
+        <div class="business-photo">
+            <dl class="kiki">
+                <a href="kiki/">
+                    <dd class="photo-item"><img src="img/bonbe_1.jpg"></dd>
+                    <dt>機器・溶材部門</dt>
+                    <dd>産業用ガスを起点として、溶接材料・工具・機械・保護具などの販売、溶接機や天井クレーンなどの修理を、医療用ガスを起点として、吸入器、マスクの販売など、多数取り扱っています。
+                    </dd>
+                </a>
+            </dl>
+            <dl class="denkou">
+                <a href="denkou/">
+                    <dd class="photo-item"><img src="img/denkikouzi_1.jpg"></dd>
+                    <dt>アイ電工 (電気工事)</dt>
+                    <dd>ご家庭の電気設備から工場・病院の高圧電気施設まで多岐にわたる工事・保守・点検・メンテナンスを行っています。<br>安心して設備を使用して頂けるように努めています。
+                    </dd>
+                </a>
+            </dl>
+            <dl class="fukusi">
+                <a href="fukusi/">
+                    <dd class="photo-item"><img src="img/kurumaisu_1.jpg"></dd>
+                    <dt>あいの助 (福祉用具の販売・貸与)</dt>
+                    <dd>自立した生活を送るため、及び、介護の負担軽減ため、福祉用具や住宅改修のプロ「ライフサポート　あいの助」にお任せください！利用者様の立場に立ったご提案を心掛けています。
+                    </dd>
+                </a>
+            </dl>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <article>
+        <h2>猪木酸素が提供する「省エネ・コスト削減」事業のご紹介</h2>
+        <div class="syouene_info">
+            <p>お客様の施設まるごと様々な節電対策、CO2の削減や老朽設備の更新、無駄な電力使用の防止などエネルギーの使用効率の向上を目指して。私たち「猪木酸素の省エネ」がそれを実現します</p>
         </div>
 
-        <div class="content">
+        <div class="syouene_btn">
+            <a class="btn-social-square btn-social-square--hatebu" href="syouene/">
+                猪木酸素の<br>省エネ
+            </a>
+            <a class="btn-social-square btn-social-square--hatebu" href="shindan/">
+                無料<br>省エネ診断
+            </a>
+            <a class="btn-social-square btn-social-square--hatebu" href="hojokin/">
+                補助金申請<br>サポート
+            </a>
+            <a class="btn-social-square btn-social-square--hatebu" href="question/">よくある<br>質問
+            </a>
+        </div>
+    </article>
 
-            <h2>事業内容【SERVICE】</h2>
+    <section class="news">
+        <h2>お知らせ</h2>
+        <div class="vertical-scroll-table">
+            <table>
+                <tbody>
+                    @foreach ($rss->channel->item as $item)
+                    <tr>
+                        <td class="news-day">{{date("Y/n/j", strtotime($item->pubDate))}}</td>
+                        <td>{{$item->title}}<span class="detail"><a href="{{$item->link}}">（詳細）</span></td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-            <div class="business-photo">
-                <dl class="kiki">
-                    <a href="kiki/">
-                        <dd class="photo-item"><img src="img/h-about-photo2.jpg"></dd>
-                        <dt>機器・溶材部門</dt>
-                        <dd>産業用ガスを起点として、溶接材料・工具・機械・保護具などの販売や溶接機や天井クレーンの修理を、医療用ガスを起点として、吸入器、マスクなど、多数取り扱っております。
-                        </dd>
-                    </a>
-                </dl>
-                <dl class="denkou">
-                    <a href="denkou/">
-                        <dd class="photo-item"><img src="img/denkou2.png"></dd>
-                        <dt>電気工事部門</dt>
-                        <dd>家庭用電気設備から工場・病院の高圧電気施設まで多岐にわたる工事・点検・保守・メンテナンスをご提供しております。
-                        </dd>
-                    </a>
-                </dl>
-                <dl class="fukusi">
-                    <a href="fukusi/">
-                        <dd class="photo-item"><img src="img/kurumaisu2.jpg"></dd>
-                        <dt>福祉用具の貸与・販売</dt>
-                        <dd>介護福祉用具貸与・販売 介護用品のことなら「ライフサポート　あいの助」にお任せください！ 利用者様の立場に立ったご提案を心掛けています。
-                        </dd>
-                    </a>
-                </dl>
-            </div>
+    <a name="map">
+        <div class="map_honsya">
+            <p>本社（機器・溶材部門、電気工事部門）</p>
+            <map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.132770844238!2d133.67856701522834!3d34.550193580473355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515bac07ea4ba5%3A0xe5c8961188ef1b8a!2z44CSNzEzLTgxMDIg5bKh5bGx55yM5YCJ5pW35biC546J5bO277yR77yV77yZ77yZ4oiS77yV!5e0!3m2!1sja!2sjp!4v1598927013716!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></map>
         </div>
 
-        <article>
-            <h2>猪木酸素が提供する「省エネ・コスト削減」事業のご紹介</h2>
-            <div class="syouene_info">
-                <p>お客様の施設まるごと様々な節電対策、CO2の削減や老朽設備の更新、無駄な電力使用の防止などエネルギーの使用効率の向上を目指して。私たち「猪木酸素の省エネ」がそれを実現します</p>
-            </div>
+        <div class="map_okayama">
+            <p>岡山事業所（福祉用具部門）</p>
+            <map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1228219345653!2d133.93139511457355!3d34.65160099335537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355407cdfd25786f%3A0x4e0d6ea8e062a7d6!2z44CSNzAzLTgyOTYg5bKh5bGx55yM5bKh5bGx5biC5Lit5Yy644GV44GP44KJ5L2P5bqn77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1605144651977!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></map>
+        </div>
+    </a>
 
-            <div class="syouene_btn">
-                <a class="btn-social-square btn-social-square--hatebu" href="syouene/">
-                    猪木酸素の<br>省エネ
-                </a>
-                <a class="btn-social-square btn-social-square--hatebu" href="shindan/">
-                    無料<br>省エネ診断
-                </a>
-                <a class="btn-social-square btn-social-square--hatebu" href="hojokin/">
-                    補助金申請<br>サポート
-                </a>
-                <a class="btn-social-square btn-social-square--hatebu" href="question/">よくある<br>質問
-                </a>
-            </div>
-        </article>
-
-        <section class="news">
-            <h2>お知らせ</h2>
-            <div class="vertical-scroll-table">
-                <table>
-                    <tbody>
-                        @foreach ($rss->channel->item as $item)
-                        <tr>
-                            <td class="news-day">{{date("Y/n/j", strtotime($item->pubDate))}}</td>
-                            <td>{{$item->title}}<span class="detail"><a href="{{$item->link}}">（詳細）</span></td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <a name="map">
-            <div class="map_honsya">
-                <p>本社（機器・溶材部門、電気工事部門）</p>
-                <map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.132770844238!2d133.67856701522834!3d34.550193580473355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35515bac07ea4ba5%3A0xe5c8961188ef1b8a!2z44CSNzEzLTgxMDIg5bKh5bGx55yM5YCJ5pW35biC546J5bO277yR77yV77yZ77yZ4oiS77yV!5e0!3m2!1sja!2sjp!4v1598927013716!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></map>
-            </div>
-
-            <div class="map_okayama">
-                <p>岡山事業所（福祉用具部門）</p>
-                <map><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1228219345653!2d133.93139511457355!3d34.65160099335537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355407cdfd25786f%3A0x4e0d6ea8e062a7d6!2z44CSNzAzLTgyOTYg5bKh5bGx55yM5bKh5bGx5biC5Lit5Yy644GV44GP44KJ5L2P5bqn77yR77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1605144651977!5m2!1sja!2sjp" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></map>
-            </div>
-        </a>
-
-        <!-- <div class="page-footer">
-            <a href="index.blade.php">
-                <img class="footer-logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-            <div class="footer-tel">
-                <p>お気軽にご連絡ください。社員一同お待ちしております。</p>
-                <a href="tel:<?php echo $tel ?>" class="tel">tel: <?php echo $tel ?></a>
-            </div>
-        </div> -->
-
-        <div class="page-footer">
-        <div class="header-top">
-            <div class="header-top_left">
-                <div class="header-logo">
-                    <a href="index.blade.php">
-                        <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+    <div class="page-footer">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                    </div>
+                    <div class="address">
+                        <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                    </div>
                 </div>
-                <div class="address">
-                    <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+
+                <div class="header-top_right">
+                    <div class="header-contact">
+                        <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                    </div>
+                    <div class="header-tel">
+                        <aside>お電話受付時間　平日9:00～17:00</aside>
+                        <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
+                    </div>
                 </div>
             </div>
 
-            <div class="header-top_right">
-                <div class="header-contact">
-                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
-                </div>
-                <div class="header-tel">
-                    <aside>お電話受付時間　平日9:00～17:00</aside>
-                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
-                </div>
-
+            <div class="header-under">
+                <ul class="main-nav">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="about/">私たちについて</a></li>
+                    <li><a href="service/">事業内容</a></li>
+                    <li><a href="http://igisanso.com/diary/">ブログ</a></li>
+                    <li><a href="#map" class="isActive">アクセス</a></li>
+                </ul>
             </div>
         </div>
-        </div>
-
     </div>
 
     <footer>

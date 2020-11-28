@@ -7,17 +7,30 @@ body {
     font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro M3", sans-serif;
     line-height: 1.7;
     color: #432;
-    width: 980px;
 }
 
-.header {
-    width: 980px;
+span {
+    font-size: 20px;
 }
+p {
+    font-size: 20px;
+}
+td{
+    font-size: 18px;
+}
+
 .container {
-    width: 980px;
+    margin: 0 auto;
+    min-width: 980px;
 }
-footer {
-    width: 980px;
+
+
+.nav-pc {
+    display: none;
+}
+
+.nav-sp {
+    display: block;
 }
 
 a {
@@ -78,6 +91,7 @@ div.header-top {
 }
 
 /* お電話受付時間 */
+
 aside {
     font-size: 16px;
     padding-left: 10px;
@@ -89,6 +103,14 @@ aside {
     font-size: 18px;
     text-align: end;
     padding-top: 0;
+    padding-left: 5px;
+    vertical-align:middle;
+}
+img.header-tel {
+    width: 38px;
+    text-align: start;
+    padding-right: 3px;
+    /* padding-top: 20px; */
 }
 
 .header-contact .button {
@@ -126,23 +148,6 @@ aside {
     -ms-box-pack: justify;
 } */
 
-.nav-pc {
-    display: block;
-}
-
-.nav-sp {
-    display: none;
-}
-
-@media screen and (max-width:480px) {
-    .nav-pc {
-        display: none;
-    }
-    .nav-sp {
-        display: block;
-    }
-}
-
 .main-nav {
     font-size: 18px;
     text-transform: uppercase;
@@ -154,17 +159,18 @@ aside {
     text-align: justify;
     text-justify: distribute-all-lines;
 }
+
 .main-nav::after {
-    content:"";
-	display: inline-block;
-	width: 100%;
-	line-height:0;
-	height: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    line-height: 0;
+    height: 0;
 }
 
 .main-nav li {
-display: inline-block;
-text-align: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .main-nav a {
@@ -200,10 +206,14 @@ text-align: center;
     /* font-size: 28px; */
 }
 
+.business-photo dd {
+    text-align: left;
+    padding-left: 10px;
+}
 .business-photo img {
-    width: 100%;
-    min-height: 180px;
-    max-height: 202px;
+    /* width: 100%; */
+    /* min-height: 180px; */
+    max-height: 220px;
 }
 
 .business-photo {
@@ -211,7 +221,7 @@ text-align: center;
     gap: 50px 10px;
     grid-template-columns: 1fr 1fr 1fr;
     /* margin-top: 3%; */
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .photo-item {
@@ -221,10 +231,12 @@ text-align: center;
 dt {
     font-size: 20px;
     font-weight: bold;
+    max-width: 340px;
 }
 
 dd {
     font-size: 18px;
+    max-width: 340px;
 }
 
 article {
@@ -255,7 +267,7 @@ article {
     -moz-box-pack: justify;
     -webkit-box-pack: justify;
     -o-box-pack: justify;
-    -ms-box-pack: justify; 
+    -ms-box-pack: justify;
     max-width: 850px;
 }
 
@@ -293,7 +305,7 @@ article {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    background-image: url(img/syouene1.jpg);
+    /* background-image: url(img/syouene1.jpg); */
     min-height: 100vh;
 }
 
@@ -303,33 +315,55 @@ article {
     border-color: inherit;
 } */
 
-.container {
-    min-height: 100vh;
-    /* 画面の100％ */
-    position: relative;
-    padding-bottom: 20px;
-    /*←footer-logoとfooterの間の高さ*/
-    box-sizing: border-box;
-    /*←全て含めてmin-height:100vhに*/
+/* div.about {
+    background-image: url("/img/hyousatu.jpg");
+    width: 100%;
+ 
+} */
+.about {
+    width: 980px;
+    margin: 0 auto;
+    /* background-image: url("/img/hyousatu.jpg"); */
+    /* width: 100%; */
+    /* text-align: center; */
 }
-
 .about h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #111;
+    text-align: center;
+    font-size: 30px;
 }
 
 .about p {
-    margin-left: 20px;
+    widows: 980px;
+    margin: 20px;
+    margin-bottom: 50px;
+    color: #111;
 }
 
-.gaiyou h2 {
-    margin-top: 50px;
-    margin-left: 10px;
+.kaisya-info {
+    width: 980px;
+    margin: 0 auto;
+}
+.kaisya-info h2 {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: rgb(206, 206, 206);
+    color: #111;
+    text-align: center;
+    font-weight: bold;
 }
 
 table td {
-    padding: 0 20px 0 20px;
+    padding: 15px;
+    vertical-align: top;
 }
 
 .jigyou h2 {
@@ -343,12 +377,14 @@ table td {
 
 .hinmoku h2 {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 .hinmoku {
-    margin-left: 10px;
-    margin-bottom: 30px;
+    width: 980px;
+    margin: 0 auto;
+    /* margin-left: 10px;
+    margin-bottom: 30px; */
 }
 
 .hinmoku p {
@@ -366,7 +402,7 @@ picture {
 }
 
 picture li {
-    text-decoration: none;
+    list-style-type: none;
 }
 
 picture img {
@@ -375,23 +411,53 @@ picture img {
 }
 
 .kiki_hinmoku-joudan img {
-    width: 280px;
-    height: 300px;
-    margin: 10px 0 5px 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px 0 20px 10px;
 }
+img.gas {
+    width: 400px;
+    height: 300px;
+}
+img.kikai {
+    width: 400px;
+    height: 300px;
+}
+img.kougu {
+    width: 400px;
+    height: 300px;
+}
+img.syuuri {
+    width: 200px;
+    height: 300px;
+}
+img.kakou {
+    width: 400px;
+    height: 300px;
+}
+img.sonota {
+    width: 400px;
+    height: 300px;
+}
+
+
 /* .kiki_hinmoku-joudan {
     width: 420px;
 } */
+
 /* .joudan {
-    width: 100%;
+    max-width: 980px;
+    text-align: center;
 } */
 
 .kiki_hinmoku-gedan img {
     width: 400px;
     height: 300px;
 }
+
 /* .gedan img {
     width: 100%; */
+
 }
 
 .fukusi_hinmoku-img {
@@ -402,7 +468,14 @@ picture img {
 .btn {
     color: #fff;
     background-color: #eb6100;
+    width: 490px;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 12px;
 }
+
 
 .btn:hover, a.btn:hover {
     color: #fff;
@@ -413,14 +486,26 @@ a.btn {
     border-radius: 30vh;
 }
 
+.group-info {
+   width: 980px;
+   margin: 0 auto; 
+}
+
 .group-info-img1 {
     float: right;
-    margin: 0.8em 0 0.8em 0.8em;
+    margin: 15px 0 0 0.8em;
     width: 300px;
     height: auto;
 }
-.group-info-img2 {
 
+.group-info-img2 {
+    margin: 0.8em;
+    padding-right: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.group-info-img3 {
     margin: 0.8em;
     padding-right: 50px;
     width: 100%;
@@ -428,15 +513,95 @@ a.btn {
 }
 
 .group-info h2 {
-    margin: 50px auto 10px 10px;
+    margin: 50px auto 10px 0px;
+
 }
 
 .group-info h3 {
-    margin: 10px auto 5px 30px;
+    margin: 20px auto 5px 0px;
+    font-size: 20px;
+    width: 300px;
+    background-color: rgb(206, 206, 206);
+    text-align: center;
 }
 
 .group-info p {
-    margin-left: 30px;
+    margin-left: 0px;
+    /* background-image: url("/img/hibana.jpg"); */
+    /* color: #fff; */
+    padding: 10px;
+}
+
+.group-info .title p {
+    margin-left: 0px;
+}
+
+.group-info .title {
+    margin-left: 0;
+    background-color: rgb(206, 206, 206);
+    color: #111;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gaiyou {
+    width: 900px;
+    margin-left: 50px;
+}
+.koumoku {
+    width: 200px;
+}
+
+.enkaku {
+    width: 900px;
+    margin-left: 50px;
+}
+.day {
+    width: 200px;
+    height: 50px;
+}
+
+th.a {
+        width: 330px
+        /* padding: 0px; */
+        /* border: 1px solid #ddd; */    
+}
+th.b {
+    width: 220px
+    /* padding: 0px; */
+    /* border: 1px solid #ddd; */    
+}
+
+.kakakuhyou th {
+    background-color: rgb(100, 99, 99);
+    color: #fff;
+}
+.kakakuhyou td {
+    height: 60px;
+    vertical-align: middle;
+}
+
+.app {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.syuttyou {
+    margin-left: 0;
+    background-color: rgb(206, 206, 206);
+    color: #111;
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+    font-size: 18px;
+}
+
+.ecoletter {
+    width: 980px;
+    margin: 0 auto;
 }
 
 .ecoletter h2 {
@@ -456,6 +621,14 @@ a.btn {
     margin-bottom: 30px;
 }
 
+h3.qa {
+    width: 980px;
+}
+p.qa {
+    width: 720px;
+    margin: 0 auto;
+}
+
 section {
     /* width: 1000px; */
     height: 230px;
@@ -471,7 +644,7 @@ section h2 {
 
 .vertical-scroll-table {
     color: #5e5e5e;
-    max-height: 100px;
+    max-height: 150px;
     overflow: auto;
     overflow-x: hidden;
 }
@@ -497,15 +670,16 @@ section h2 {
     text-align: right;
     /* border: 1px solid #ddd; */
 }
+
 .vertical-scroll-table .detail {
     float: none;
     /* border: 1px solid #ddd; */
 }
 
 table {
-    /* width: 800px; */
+    width: 980px;
     height: 80px;
-    margin: 10px auto;
+    margin: 0px auto;
     background-attachment: scroll;
 }
 

@@ -60,7 +60,7 @@
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
-                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                    <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
 
     <div class="group-info">
         <h2>猪木酸素の省エネ事業</h2>
-        <p><img src="/img/syouene3.jpg" class="group-info-img1"></p>
+        <p><img src="/img/syouene_1.jpg" class="group-info-img1"></p>
         <p>省エネをしたいと思っていても<br>
         「何をしていいのかわからない。」<br>
         「省エネするには大きな設備投資が必要でしょう？」<br>
@@ -125,12 +125,29 @@
         </div>
     </article>
 
-    <div class="page-footer wrapper">
-        <a href="index.blade.php">
-            <img class="footer-logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-        <div class="footer-tel">
-            <p>お気軽にご連絡ください。社員一同お待ちしております。</p>
-            <a href="tel:<?php echo $tel ?>" class="tel">tel: <?php echo $tel ?></a>
+    <div class="page-footer">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                    </div>
+                    <div class="address">
+                        <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                    </div>
+                </div>
+
+                <div class="header-top_right">
+                    <div class="header-contact">
+                        <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                    </div>
+                    <div class="header-tel">
+                        <aside>お電話受付時間　平日9:00～17:00</aside>
+                        <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

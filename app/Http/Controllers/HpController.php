@@ -83,4 +83,9 @@ class HpController extends Controller
     {
         return view('mailform/index');
     }
+    public function mailcomplete()
+    {
+        
+        return view('mailform/complete');
+    }
 }

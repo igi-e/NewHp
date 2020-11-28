@@ -30,4 +30,12 @@ Route::get('syouene', 'HpController@syouene')->name('syouene');
 Route::get('contact', 'HpController@contact')->name('contact');
 Route::get('blog', 'HpController@blog')->name('blog');
 Route::get('map', 'HpController@map')->name('map');
-Route::get('mailform', 'HpController@mailform')->name('mailform');
+// Route::get('mailform', 'HpController@mailform')->name('mailform');
+// Route::post('mailform/complete', 'HpController@mailcomplete')->name('mailcomplete');
+
+//入力ページ
+Route::get('contact', 'ContactController@index')->name('contact.index');
+//確認ページ
+Route::post('contact/confirm', 'ContactController@confirm')->name('contact.confirm');
+//送信完了ページ
+Route::post('contact/thanks', 'ContactController@send')->name('contact.send');

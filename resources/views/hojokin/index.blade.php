@@ -60,7 +60,7 @@
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
-                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                    <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
                 </div>
             </div>
         </div>
@@ -78,13 +78,13 @@
 
     <div class="group-info">
         <h2>補助金申請サポート</h2>
-        <p><img src="/img/syouene3.jpg" class="group-info-img1"></p>
-            <h3>補助金活用診断</h3>
-            <p>省エネに関連する補助金は数十種類あります。その中から御社の状況（利用設備やエネルギー使用量）に合わせ、最適な補助金を選定します。<br>
+        <p><img src="/img/hojokin.jpg" class="group-info-img1"></p>
+        <h3>補助金活用診断</h3>
+        <p>省エネに関連する補助金は数十種類あります。その中から御社の状況（利用設備やエネルギー使用量）に合わせ、最適な補助金を選定します。<br>
             ■「補助金を活用したい！」というお客様の手間になる申請書作成業務…に対して、補助金申請のサポートをします。<br>
             補助金は利用したくとも、その申請や報告が手間で、利用を断念される方が多いのも現状です。私どもがサポートしますので一緒に申請していきませんか？</p>
-            <h3>サポート内容</h3>
-            <p>・補助金申請に関する情報収集<br>
+        <h3>サポート内容</h3>
+        <p>・補助金申請に関する情報収集<br>
             ・既存設備に対するデータ収集<br>
             ・申請機器に対するデータ収集<br>
             ・申請書記入等に関する問合せ<br>
@@ -119,12 +119,28 @@
         </div>
     </article>
 
-    <div class="page-footer wrapper">
-        <a href="index.blade.php">
-            <img class="footer-logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-        <div class="footer-tel">
-            <p>お気軽にご連絡ください。社員一同お待ちしております。</p>
-            <a href="tel:<?php echo $tel ?>" class="tel">tel: <?php echo $tel ?></a>
+    <div class="page-footer">
+        <div class="header-top">
+            <div class="header-top_left">
+                <div class="header-logo">
+                    <a href="index.blade.php">
+                        <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                </div>
+                <div class="address">
+                    <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                </div>
+            </div>
+
+            <div class="header-top_right">
+                <div class="header-contact">
+                    <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                </div>
+                <div class="header-tel">
+                    <aside>お電話受付時間　平日9:00～17:00</aside>
+                    <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
+                </div>
+
+            </div>
         </div>
     </div>
 

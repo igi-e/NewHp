@@ -60,7 +60,7 @@
                 </div>
                 <div class="header-tel">
                     <aside>お電話受付時間　平日9:00～17:00</aside>
-                    <p class="header-tel"><a href="tel:086-526-1212">tel:086-526-1212</a></p>
+                    <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
                 </div>
             </div>
         </div>
@@ -77,49 +77,50 @@
     </div>
 
     <div class="group-info">
-        <h2>電気工事部門「アイ電工」</h2>
+        <h2 class="title">電気工事部門「アイ電工」</h2>
         <p><img src="/img/denkou.jpg" class="group-info-img1"></p>
         <p>2018年より、お客様の要望と弊社社長の強い思いが重なり合い、電気工事事業を始めることになりました。かねてより、何となく電気工事を頼むのは敷居が高く、ちょっとしたことでも気軽に頼みたいとのお話を聞くことがよくありました。頻繁に周辺を回っている弊社ならば相談や依頼をしやすく、直接弊社が工事を行えば、よりお客様のお役に立てるのではないかと思い電気工事を始めることにしました。熟練の専門のスタッフがおりますので、何でもお気軽にご相談ください。 </p>
 
-        <h2>価格の一例</h2>
-        <p>一例ですが、電気工事価格表をご参考までに記載しています。<br>その他にも各種電気工事を行っておりますので、お問い合わせください</p>
+        
+        <div class="subtitle">価格の一例</div>
+        <p>一例ですが、電気工事価格表をご参考までに記載しています。<br>その他にも各種電気工事を行っておりますので、お気軽にお問い合わせください</p>
 
         <div class="konsento">
             <h3>コンセントの工事</h3>
-            <table>
+            <table class="kakakuhyou">
                 <tr>
-                    <th>工事内容</th>
-                    <th>作業料金(税別)</th>
-                    <th>こんな時に！</th>
+                    <th class="a">工事内容</th>
+                    <th class="b">作業料金(税別)</th>
+                    <th class="c">こんな時に！</th>
                 </tr>
                 <tr>
                     <td>コンセント取替工事</td>
-                    <td>コンセント3,000円～</td>
+                    <td>3,000円～</td>
                     <td>コンセントの差込口が外れかけてぐらぐら</td>
                 </tr>
                 <tr>
                     <td>コンセント増設工事</td>
                     <td>6,000円～</td>
-                    <td>タコ足配線で火災が心配なので3ｍぐらい先にコンセントを増設</td>
+                    <td>タコ足配線で火災が心配なので3ｍぐらい先にコンセントを増設したい</td>
                 </tr>
                 <tr>
                     <td>コンセント専用回路増設工事</td>
                     <td>15,000円～</td>
-                    <td>電化製品を購入したがコンセントが無いため予備ブレーカーから新規に配線してコンセントを増設</td>
+                    <td>コンセントが足りないため予備ブレーカーから配線してコンセントを増設したい</td>
                 </tr>
             </table>
         </div>
         <div class="syoumei-suitti">
             <h3>照明器具・スイッチの工事</h3>
-            <table>
+            <table class="kakakuhyou">
                 <tr>
-                    <th>工事内容</th>
-                    <th>作業料金(税別)</th>
-                    <th>こんな時に！</th>
+                    <th class="a">工事内容</th>
+                    <th class="b">作業料金(税別)</th>
+                    <th class="c">こんな時に！</th>
                 </tr>
                 <tr>
                     <td>ランプ取り付け工事<br>
-                        （足場が必要な場合は別途費用がかかります）</td>
+                        （足場、作業車等必要な場合は別途）</td>
                     <td>3,000円～
                         <br>（ランプ料金別途）</td>
                     <td>ランプの取替え方がわからない<br>
@@ -138,7 +139,7 @@
                     <td>ワンタッチタイプのものに取替えたい</td>
                 </tr>
                 <tr>
-                    <td>スイッチ新設工事）</td>
+                    <td>スイッチ新設工事</td>
                     <td>10,000円～</td>
                     <td>和室の照明に壁スイッチを設けたい</td>
                 </tr>
@@ -157,11 +158,11 @@
         </div>
         <div class="kankisen">
             <h3>換気扇・レンジフードの工事</h3>
-            <table>
+            <table class="kakakuhyou">
                 <tr>
-                    <th>工事内容</th>
-                    <th>作業料金(税別)</th>
-                    <th>こんな時に！</th>
+                    <th class="a">工事内容</th>
+                    <th class="b">作業料金(税別)</th>
+                    <th class="c">こんな時に！</th>
                 </tr>
                 <tr>
                     <td>天井換気扇取替工事</td>
@@ -187,11 +188,11 @@
         </div>
         <div class="interphone">
             <h3>インターホン・防犯の工事</h3>
-            <table>
+            <table class="kakakuhyou">
                 <tr>
-                    <th>工事内容</th>
-                    <th>作業料金(税別)</th>
-                    <th>こんな時に！</th>
+                    <th class="a">工事内容</th>
+                    <th class="b">作業料金(税別)</th>
+                    <th class="c">こんな時に！</th>
                 </tr>
                 <tr>
                     <td>インターホン取付工事</td>
@@ -228,11 +229,11 @@
         </div>
         <div class="sonota">
             <h3>漏電やその他の電気工事</h3>
-            <table>
+            <table class="kakakuhyou">
                 <tr>
-                    <th>工事内容</th>
-                    <th>作業料金(税別)</th>
-                    <th>こんな時に！</th>
+                    <th class="a">工事内容</th>
+                    <th class="b">作業料金(税別)</th>
+                    <th class="c">こんな時に！</th>
                 </tr>
                 <tr>
                     <td>漏電調査費</td>
@@ -256,8 +257,8 @@
                 </tr>
             </table>
         </div>
-        <h3>その他オール電化工事や太陽光発電システム工事等なんなりとご相談ください</h3>
-        <h4>　　出張費について</h4>
+        <div class="app">  その他オール電化工事や太陽光発電システム工事等なんなりとご相談ください</div>
+        <div class="syuttyou">出張費について</div>
         <p>・倉敷市内基本無料<br>
             ・弊社から車で３０分以内の地域基本無料<br>
             （例）　倉敷市（児島地区は除く）、浅口市方面　矢掛町方面　総社市方面など<br>
@@ -269,31 +270,29 @@
 
 
     <div class="content">
-
-        <h2>各事業のご紹介</h2>
-
+        <h2>事業内容【SERVICE】</h2>
         <div class="business-photo">
             <dl class="kiki">
                 <a href="/kiki/">
-                    <dd class="photo-item"><img src="/img/h-about-photo2.jpg"></dd>
+                    <dd class="photo-item"><img src="/img/bonbe_1.jpg"></dd>
                     <dt>機器・溶材部門</dt>
-                    <dd>産業用ガスを起点として、溶接材料・工具・機械・保護具などの販売や溶接機や天井クレーンの修理を、医療用ガスを起点として、吸入器、マスクなど、多数取り扱っております。
+                    <dd>産業用ガスを起点として、溶接材料・工具・機械・保護具などの販売、溶接機や天井クレーンなどの修理を、医療用ガスを起点として、吸入器、マスクの販売など、多数取り扱っています。
                     </dd>
                 </a>
             </dl>
             <dl class="denkou">
                 <a href="/denkou/">
-                    <dd class="photo-item"><img src="/img/denkou.jpg"></dd>
-                    <dt>電気工事部門</dt>
-                    <dd>家庭用電気設備から工場・病院の高圧電気施設まで多岐にわたる工事・点検・保守・メンテナンスをご提供しております。
+                    <dd class="photo-item"><img src="/img/denkikouzi_1.jpg"></dd>
+                    <dt>アイ電工 (電気工事)</dt>
+                    <dd>ご家庭の電気設備から工場・病院の高圧電気施設まで多岐にわたる工事・保守・点検・メンテナンスを行っています。<br>安心して設備を使用して頂けるように努めています。
                     </dd>
                 </a>
             </dl>
             <dl class="fukusi">
                 <a href="/fukusi/">
-                    <dd class="photo-item"><img src="/img/kurumaisu.jpg"></dd>
-                    <dt>福祉用具の貸与・販売</dt>
-                    <dd>介護福祉用具貸与・販売 介護用品のことなら「ライフサポート　あいの助」にお任せください！ 利用者様の立場に立ったご提案を心掛けています。
+                    <dd class="photo-item"><img src="/img/kurumaisu_1.jpg"></dd>
+                    <dt>あいの助 (福祉用具の販売・貸与)</dt>
+                    <dd>自立した生活を送るため、及び、介護の負担軽減ため、福祉用具や住宅改修のプロ「ライフサポート　あいの助」にお任せください！利用者様の立場に立ったご提案を心掛けています。
                     </dd>
                 </a>
             </dl>
@@ -321,14 +320,40 @@
             </div>
     </article>
 
-    <div class="page-footer wrapper">
-        <a href="index.blade.php">
-            <img class="footer-logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
-        <div class="footer-tel">
-            <p>お気軽にご連絡ください。社員一同お待ちしております。</p>
-            <a href="tel:<?php echo $tel ?>" class="tel">tel: <?php echo $tel ?></a>
+    <div class="page-footer">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-top_left">
+                    <div class="header-logo">
+                        <a href="/">
+                            <img class="logo" src="../../img/logo.jpg" alt="(有)猪木酸素玉島店"></a>
+                    </div>
+                    <div class="address">
+                        <address>本社：〒713-8102　岡山県倉敷市玉島1599-5<br>岡山事業所：〒703-8296　岡山市中区さくら住座10-1</address>
+                    </div>
+                </div>
+
+                <div class="header-top_right">
+                    <div class="header-contact">
+                        <p class="button"><a href="mailform/"><img class="otoiawase" src="../../img/otoiawase.png" alt="お問い合わせはこちら"></a></p>
+                    </div>
+                    <div class="header-tel">
+                        <aside>お電話受付時間　平日9:00～17:00</aside>
+                        <p><a href="tel:086-526-1212"><img src="/img/tel.jpeg" class="header-tel">086-526-1212</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-under">
+                <ul class="main-nav">
+                    <li><a href="/">トップページ</a></li>
+                    <li><a href="/about/">私たちについて</a></li>
+                    <li><a href="/service/">事業内容</a></li>
+                    <li><a href="http://igisanso.com/diary/">ブログ</a></li>
+                    <li><a href="/#map" class="isActive">アクセス</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </div>
 
     <footer>
